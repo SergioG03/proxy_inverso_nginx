@@ -11,7 +11,7 @@ Asegúrate de tener NGINX instalado en tu servidor Ubuntu. Si no lo tienes insta
 ```bash
 sudo apt-get update
 sudo apt-get install nginx
-
+```
 ### 2. Modificación de la configuración de NGINX
 
 Una vez que NGINX esté instalado, debes configurar el archivo de configuración para tu proxy inverso. Puedes encontrar este archivo en /etc/nginx/sites-available/. Es importante que esta carpeta esté vinculada a /sites-enabled para que funcione correctamente. Si no aparece lo mismo en ambas carpetas ejecute el siguiente comando: **sudo ln -s /etc/nginx/sites-available/mi-sitio /etc/nginx/sites-enabled/**
@@ -25,14 +25,14 @@ En mi caso es una página WEB creada con MKDocs y subida utilizando GitHub Pages
 ### 4. Por último lo que haremos será iniciar NGINX, activarlo y comprobar que funciona correctamente.
 
 Los comandos a ejecutar serán los siguientes:
-
-**sudo systemctl start nginx**
-**sudo systemctl enable nginx**
-
+```bash
+sudo systemctl start nginx
+sudo systemctl enable nginx
+```
 Y posteriormente si queremos realizar una previa comprobación de que esta todo correcto sin fallos podemos ejecutar el siguiente:
-
-**sudo nginx -t**
-
+```bash
+sudo nginx -t
+```
 
 
 
