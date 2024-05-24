@@ -20,7 +20,7 @@ Una vez que NGINX esté instalado, debes configurar el archivo de configuración
 
 En mi caso es una página WEB creada con MKDocs y subida utilizando GitHub Pages, y lo que haré con ella es que también sea accesible en mi equipo a través del enlace "sergioweb.com". El código de configuración tendría la siguiente forma:
 
-![nginx](imagenes/imagen1.png)
+![proxy_inverso_nginx](imagenes/imagen1.png)
 
 ### 4. Por último lo que haremos será iniciar NGINX, activarlo y comprobar que funciona correctamente.
 
